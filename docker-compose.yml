@@ -9,7 +9,7 @@ services:
       - PGID=1000
       - TZ=Europe/Berlin
       - SITE_NAME="Cronjob Monitoring"
-      - SITE_URL
+      - SITE_ROOT
       - SUPERUSER_EMAIL
       - SUPERUSER_PASSWORD
     networks:
