@@ -17,6 +17,7 @@ services:
       - ADMINS=${SUPERUSER_EMAIL}
       - SERVER_EMAIL=${SUPERUSER_EMAIL}
       - REGISTRATION_OPEN=False
+      - SITE_LOGO_URL
     networks:
       proxy_apps:
 
