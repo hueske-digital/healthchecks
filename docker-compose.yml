@@ -12,6 +12,8 @@ services:
       - SITE_ROOT
       - SUPERUSER_EMAIL
       - SUPERUSER_PASSWORD
+      - DEBUG=False
+      - ALLOWED_HOSTS=*
     networks:
       proxy_apps:
 
