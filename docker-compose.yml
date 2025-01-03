@@ -1,0 +1,21 @@
+services:
+  app:
+    image: lscr.io/linuxserver/healthchecks:latest
+    restart: unless-stopped
+    volumes:
+      - app_config:/config
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Berlin
+      - SITE_ROOT="Cronjob Monitoring"
+      - SITE_NAME
+      - SUPERUSER_EMAIL
+      - SUPERUSER_PASSWORD
+    networks:
+      proxy_apps:
+
+networks:
+  proxy_apps:
+    name: proxy_apps
+    external: true
