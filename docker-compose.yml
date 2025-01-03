@@ -15,6 +15,9 @@ services:
     networks:
       proxy_apps:
 
+volumes:
+  app_config:
+
 networks:
   proxy_apps:
     name: proxy_apps
