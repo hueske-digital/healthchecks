@@ -16,6 +16,7 @@ services:
       - ALLOWED_HOSTS=*
       - ADMINS=${SUPERUSER_EMAIL}
       - SERVER_EMAIL=${SUPERUSER_EMAIL}
+      - REGISTRATION_OPEN=False
     networks:
       proxy_apps:
 
