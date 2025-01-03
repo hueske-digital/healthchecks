@@ -8,8 +8,8 @@ services:
       - PUID=1000
       - PGID=1000
       - TZ=Europe/Berlin
-      - SITE_ROOT="Cronjob Monitoring"
-      - SITE_NAME
+      - SITE_NAME="Cronjob Monitoring"
+      - SITE_URL
       - SUPERUSER_EMAIL
       - SUPERUSER_PASSWORD
     networks:
